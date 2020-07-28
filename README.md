@@ -1,68 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project 2 Proposal - Know Your Wizard
 
-## Available Scripts
+# Project Description
 
-In the project directory, you can run:
+This app will called "Know Your Wizard" - it will be for all the Harry Potter fanatics out there and a use for people who would like to converse with them!
 
-### `npm start`
+Users will have access on the homepage to all the main characters, They will be able to click on to a character to get more information on said character.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Wireframes
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Homepage
 
-### `npm test`
+![image](https://media.git.generalassemb.ly/user/29117/files/d9e06b00-d0db-11ea-8be8-ebfedcf1ce57)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Character Page
 
-### `npm run build`
+![image](https://media.git.generalassemb.ly/user/29117/files/02686500-d0dc-11ea-910a-3db35c85233d)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## MVP
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- As a user I'd like to see all the names main characters of the Harry Potter series.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- As a user I will need to be able to click on a character to get more information on that character.
 
-### `npm run eject`
+- As a user the display should be well organized to find characters more easily
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Stretch Goals for the APP
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- As a user i'd like to see an image of the character
+- As a user I'd like to be able to search for a particular character
+- As i user i'd like to see a video on home page
