@@ -2,7 +2,7 @@
 
 # Project Description
 
-This app will called "Know Your Wizard" - it will be for all the Harry Potter fanatics out there and a use for people who would like to converse with them!
+This app will be called "Know Your Wizard" - it will be for all the Harry Potter fanatics out there and a use for people who would like to converse with them!
 
 Users will have access on the homepage to all the main characters, They will be able to click on to a character to get more information on said character.
 
