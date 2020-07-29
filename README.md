@@ -29,3 +29,26 @@ Users will have access on the homepage to all the main characters, They will be 
 - As a user i'd like to see an image of the character
 - As a user I'd like to be able to search for a particular character
 - As i user i'd like to see a video on home page
+
+# API
+
+This is the API I will be using for the project https://www.potterapi.com/
+
+{
+\_id: "5a0fa4daae5bc100213c232e",
+name: "Hannah Abbott",
+role: "student",
+house: "Hufflepuff",
+school: "Hogwarts School of Witchcraft and Wizardry",
+\_\_v: 0,
+ministryOfMagic: false,
+orderOfThePhoenix: false,
+dumbledoresArmy: true,
+deathEater: false,
+bloodStatus: "half-blood",
+species: "human"
+},
+
+### App component tree
+
+![image](https://media.git.generalassemb.ly/user/29117/files/09918080-d179-11ea-95e6-982beae1ebca)
