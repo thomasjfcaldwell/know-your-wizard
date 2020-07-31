@@ -3,6 +3,8 @@ import Header from './Header';
 import DashBoard from './Dashboard';
 import axios from 'axios';
 import { Link, Route } from 'react-router-dom';
+import About from './About';
+import Wizards from './Wizards';
 
 const key = process.env.REACT_APP_MYAPI_KEY;
 
@@ -19,18 +21,25 @@ class App extends Component {
 		)
 			.then((json) => {
 				this.setState({ data: json.data });
-				console.log(this.state.data[19].name);
+				//console.log(this.state.data[19].name);
 			})
 			.catch(console.error);
 	}
 	render() {
 		return (
 			<div>
-				<Header />
 				<Route
-					path='/'
+					exact
+					path='/wizards'
 					render={() => {
 						return <DashBoard data={this.state.data} />;
+					}}
+				/>
+				<Route path='/about' component={About} />
+				<Route
+					path='/wizards/:name'
+					render={(routerProps) => {
+						return <Wizards match={routerProps.match} data={this.state.data} />;
 					}}
 				/>
 			</div>
