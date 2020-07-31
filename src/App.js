@@ -6,13 +6,13 @@ import { Link, Route } from 'react-router-dom';
 import About from './About';
 import Wizards from './Wizards';
 
-const key = process.env.REACT_APP_MYAPI_KEY;
+const key = process.env.REACT_APP_MYAPI_KEY; /// api key in a varible for use later
 
 class App extends Component {
 	constructor() {
 		super();
-		this.state = {
-			data: [],
+		this.state = { ///setting State for data being brought in below
+			data: [], 
 		};
 	}
 	componentDidMount() {
@@ -21,7 +21,6 @@ class App extends Component {
 		)
 			.then((json) => {
 				this.setState({ data: json.data });
-				//console.log(this.state.data[19].name);
 			})
 			.catch(console.error);
 	}
@@ -30,16 +29,16 @@ class App extends Component {
 			<div>
 				<Route
 					exact
-					path='/wizards'
+					path='/wizards/'
 					render={() => {
-						return <DashBoard data={this.state.data} />;
+						return <DashBoard data={this.state.data} />; /// sending data down to dashboard component
 					}}
 				/>
-				<Route path='/about' component={About} />
+				<Route path='/about' component={About} /> 
 				<Route
 					path='/wizards/:name'
 					render={(routerProps) => {
-						return <Wizards match={routerProps.match} data={this.state.data} />;
+						return (<Wizards match={routerProps.match} data={this.state.data} />) /// matching wizards name on the click so to bring up info on that wizard once clicked. Plus passing data down
 					}}
 				/>
 			</div>

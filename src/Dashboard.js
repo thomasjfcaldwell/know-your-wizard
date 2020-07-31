@@ -11,8 +11,8 @@ class DashBoard extends Component {
 				<Header />
 				<h1>Wizards</h1>
 				<ul>
-					{this.props.data.map((data, id) => {
-						return <li key={id}><Link to={`/${data.name}`}>{data.name}{" "}{data.role}</Link></li>;
+					{this.props.data.map((data, id) => { ///maping through data to display information
+						return <li key={id}><Link to={`/wizards/${data.name}`}>{data.name}{" "}{data.role}</Link></li>; // list of chosen datasets plus link to take user to page
 					})}
 				</ul>
 			</div>
