@@ -7,7 +7,7 @@ class DashBoard extends Component {
 	render() {
 		//console.log(this.props.data);
 		return (
-			<div>
+			<div className="dashboard">
 				<Header />
 				<h1>Wizards</h1>
 				<ul>

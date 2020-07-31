@@ -29,7 +29,7 @@ class App extends Component {
 			<div>
 				<Route
 					exact
-					path='/wizards/'
+					path='/wizards'
 					render={() => {
 						return <DashBoard data={this.state.data} />; /// sending data down to dashboard component
 					}}
