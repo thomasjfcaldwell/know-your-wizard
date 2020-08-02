@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Search from './Search'
+import Search from "./Search"
 class Header extends Component {
 	render() {
 		return (
@@ -8,7 +8,6 @@ class Header extends Component {
 				<nav>
 					<Link to='/wizards'>Home</Link>
 					<Link to='/about'>About This Site</Link>
-                    <Search />
 				</nav>
 			</div>
 		);

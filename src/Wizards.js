@@ -18,8 +18,8 @@ class Wizards extends Component {
 			<div>
 				<Header />
 				<main>
-					<h1>Name {wizards.name}</h1>
-					<h1>Role {wizards.role}</h1>
+					<h1>{wizards.name}</h1>
+					<h1>{wizards.role}</h1>
 					<h1>{wizards.species}</h1>
 				</main>
 			</div>
