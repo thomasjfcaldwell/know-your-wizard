@@ -60,7 +60,8 @@ class App extends Component {
 					/>
 					<Route path='/about' component={About} />
 					<Route
-						path='/wizards/:name'
+            path='/wizards/:name'
+            exact
 						render={(routerProps) => {
 							return (
 								<Wizards match={routerProps.match} data={this.state.data} />

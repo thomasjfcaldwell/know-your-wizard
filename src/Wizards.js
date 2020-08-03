@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
+import { Route } from 'react-router-dom';
 
 //console.log(this.props.data);
 
@@ -20,8 +21,11 @@ class Wizards extends Component {
 				<main>
 					<h1>{wizards.name}</h1>
 					<h1>{wizards.role}</h1>
-					<h1>{wizards.species}</h1>
 				</main>
+				<form>
+					<button Route="/wizards/${index++}">Next</button>
+					<button>Prev</button>
+				</form>
 			</div>
 		);
 	}

@@ -1,3 +1,10 @@
-dashboard. {
-	color: black;
+.dashboard {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+li {
+    list-style-type: none;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+    
 }

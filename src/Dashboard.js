@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './Dashboard.css';
 import { Link } from 'react-router-dom';
+import './Dashboard.css';
 
 class DashBoard extends Component {
 	render() {
 		if (this.props.searchWizard) {
 			return (
 				<div className='dashboard'>
+					<h1> Filtered Wizards</h1>
 					<ul>
 						{this.props.filteredWizards.map((data, id) => {
 							///maping through data to display information
