@@ -1,11 +1,25 @@
 import React, { Component } from 'react';
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
 
 class About extends Component {
 	render() {
 		return (
-			<div>
-				<h1>Whats up dog?</h1>
-			</div>
+			<Jumbotron>
+				<Container>
+					<h1>About This Site</h1>
+					<p>
+						Built over the course of a few days, using react and react
+						bootstrap. First project of its kind by the development. He will
+						look long back on this in years to come and see how far he has come
+						- hello future Thomas! Hope all is well in the world!
+					</p>
+
+					<p>Api data has been used from https://www.potterapi.com/</p>
+				</Container>
+			</Jumbotron>
 		);
 	}
 }

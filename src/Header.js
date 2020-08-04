@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Search from "./Search"
-import magic from './magic.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { LinkContainer } from 'react-router-bootstrap';
@@ -9,7 +6,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 class Header extends Component {
 	render() {
 	return (
-		<Navbar collapseOnSelect variant='light' expand='md'>
+		<Navbar className="p-3 mb-2 bg-warning text-white"collapseOnSelect variant='light' expand='md'>
 			<LinkContainer to='/home'>
 				<Navbar.Brand>Know Your Wizard</Navbar.Brand>
 			</LinkContainer>

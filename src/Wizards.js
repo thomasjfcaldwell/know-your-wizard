@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Card from "react-bootstrap/Card"
 
+
 //console.log(this.props.data);
 
 class Wizards extends Component {
@@ -14,21 +15,20 @@ class Wizards extends Component {
 			}
 		}
 		return (
-			<Card>
-				<div class='card text-center'>
+			<Card >
 					<div class='card-header'>Your Chosen Wizard</div>
 					<div class='card-body'>
 						<h5 class='card-title'>{wizards.name}</h5>
 						<p class='card-text'>
-							{wizards.name}{' '}
-							{wizards.role}{' '}
-							{wizards.school}{' '}
-							{wizards.alias}{' '}
-							{wizards.bloodStatus}{' '}
+							{wizards.name}{'-'}
+							{wizards.role}{'-'}
+							{wizards.school}{'-'}
+							{wizards.alias}{'-'}
+							{wizards.bloodStatus}{'-'}
 						</p>
 					</div>
 					<div class='card-footer text-muted'>'arry Potter world</div>
-				</div>
+
 			</Card>
 		);
 	}

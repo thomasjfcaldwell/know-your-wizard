@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import Header from './Header';
 import DashBoard from './Dashboard';
 import axios from 'axios';
-import { Link, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import About from './About';
 import Wizards from './Wizards';
 import Search from './Search';
-import Button from 'react-bootstrap/button';
-import Background from './Background.jpg'
 
 
 
@@ -19,7 +17,7 @@ class App extends Component {
 		this.state = {
 			///setting State for data being brought in below
 			data: [],
-			searchWizards: '',
+      searchWizards: '',
 		};
 	}
 	componentDidMount() {
@@ -34,7 +32,6 @@ class App extends Component {
 
 	handleInput = (event) => {
 		this.setState({ searchWizard: event.target.value });
-		console.log(event.target.value);
 	};
 
 	render() {
@@ -46,7 +43,6 @@ class App extends Component {
 				<Header />
 				<Search handleInput={this.handleInput} />
 				<main>
-					<Route path='/' />
 					<Route
 						exact
 						path='/wizards'
