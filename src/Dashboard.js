@@ -18,8 +18,11 @@ class DashBoard extends Component {
 						return (
 							<Card key={id}>
 								<Card.Body className='p-3 mb-0 bg-warning text-white'>
-									<Card.Text className='text-muted'>
-										<Link exact to={`/wizards/${data.name}`}>
+									<Card.Text className='text-white'>
+										<Link
+											className='text-dark'
+											exact
+											to={`/wizards/${data.name}`}>
 											{data.name}{' '}
 											<img
 												src={magic}
@@ -47,7 +50,10 @@ class DashBoard extends Component {
 							<Card key={id}>
 								<Card.Body className='p-4 mb-0 bg-success text-white text-xl-center'>
 									<Card.Text className='text-white'>
-										<Link exact to={`/wizards/${data.name}`}>
+										<Link
+											className='text-white'
+											exact
+											to={`/wizards/${data.name}`}>
 											{data.name}{' '}
 											<img
 												src={magic}
