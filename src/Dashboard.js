@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Dashboard.css';
 import { Link } from 'react-router-dom';
 import './Dashboard.css';
+import magic from "./magic.png"
 
 class DashBoard extends Component {
 	render() {
@@ -16,6 +17,7 @@ class DashBoard extends Component {
 								<li key={id}>
 									<Link exact to={`/wizards/${data.name}`}>
 										{data.name}{' '}
+										<img src={magic} alt='magic wand' height={20} width={20} />
 									</Link>
 								</li>
 							); // list of chosen datasets plus link to take user to page
@@ -35,9 +37,11 @@ class DashBoard extends Component {
 							return (
 								<li key={id}>
 									<Link exact to={`/wizards/${data.name}`}>
-										{data.name}{' '}
+										{data.name} 
 									</Link>
+                                    <img src={magic} alt="magic wand" height={20} width={20}/>
 								</li>
+                                
 							); // list of chosen datasets plus link to take user to page
 						})}
 					</ul>
