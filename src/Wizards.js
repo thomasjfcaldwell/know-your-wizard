@@ -13,14 +13,6 @@ class Wizards extends Component {
 				wizards = this.props.data[i]; /// stored information to use
 			}
 		}
-		if (wizards.role === " ") {
-			return (
-				<div>
-					<p>minor charactor</p>
-				</div>
-			);
-		} 
-
 		return (
 			<Card>
 				<div class='card text-center'>
@@ -28,15 +20,15 @@ class Wizards extends Component {
 					<div class='card-body'>
 						<h5 class='card-title'>{wizards.name}</h5>
 						<p class='card-text'>
-							{wizards.name} is a {wizards.role}
+							{wizards.name}{' '}
+							{wizards.role}{' '}
+							{wizards.school}{' '}
+							{wizards.alias}{' '}
+							{wizards.bloodStatus}{' '}
 						</p>
 					</div>
 					<div class='card-footer text-muted'>'arry Potter world</div>
 				</div>
-				<form>
-					<button Route='/wizards/${index++}'>Next</button>
-					<button>Prev</button>
-				</form>
 			</Card>
 		);
 	}

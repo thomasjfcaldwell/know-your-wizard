@@ -9,7 +9,7 @@ class Search extends Component {
 	render() {
 		return (
 			<form>
-				<input onChange={this.props.handleInput} type='text' placeholder ="type here"/>
+				<input onChange={this.props.handleInput} type='text' placeholder ="type here to find your favorite wizard"/>
 			</form>
 		);
 	}
