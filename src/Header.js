@@ -13,7 +13,7 @@ class Header extends Component {
 			<Navbar.Toggle aria-controls='basic-navbar-nav' />
 			<Navbar.Collapse id='basic-navbar-nav'>
 				<Nav>
-					<LinkContainer to='/wizards'>
+					<LinkContainer to='/'>
 						<Nav.Link>Home</Nav.Link>
 					</LinkContainer>
 					<LinkContainer to='/wizards'>

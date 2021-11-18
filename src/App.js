@@ -7,45 +7,43 @@ import About from './About';
 import Wizards from './Wizards';
 import Search from './Search';
 
-
-
 const key = process.env.REACT_APP_MYAPI_KEY; /// api key in a varible for use later
-const url = 'https://www.potterapi.com/v1/characters/?key=$2a$10$jMMAc6AU4i8uxxNpsy9ImOMOEDXTf6rzLDcdWq2E9FAR0.TmcNA9G/';
+const url = 'http://hp-api.herokuapp.com/api/characters';
 class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			///setting State for data being brought in below
 			data: [],
-      searchWizards: '',
+			searchWizards: '',
 		};
+		
 	}
+	
 	componentDidMount() {
-		axios(
-			'https://www.potterapi.com/v1/characters/?key=$2a$10$jMMAc6AU4i8uxxNpsy9ImOMOEDXTf6rzLDcdWq2E9FAR0.TmcNA9G'
-		)
+		axios(`${url}`)
 			.then((json) => {
 				this.setState({ data: json.data });
+				console.log(this.state.data[0]);
 			})
 			.catch(console.error);
 	}
 
 	handleInput = (event) => {
 		this.setState({ searchWizard: event.target.value });
-	};
-
+	 };
 	render() {
 		let filteredWizards = this.state.data.filter((wizard) => {
 			return wizard.name.includes(this.state.searchWizard);
 		});
 		return (
-        <div className ="container">
+			<div className='container'>
 				<Header />
 				<Search handleInput={this.handleInput} />
 				<main>
 					<Route
 						exact
-						path='/wizards'
+						path='/'
 						render={() => {
 							return (
 								<DashBoard
