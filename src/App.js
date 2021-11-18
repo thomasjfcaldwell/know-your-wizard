@@ -8,7 +8,7 @@ import Wizards from './Wizards';
 import Search from './Search';
 
 const key = process.env.REACT_APP_MYAPI_KEY; /// api key in a varible for use later
-const url = 'http://hp-api.herokuapp.com/api/characters';
+const url = 'https://hp-api.herokuapp.com/api/characters';
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -17,9 +17,8 @@ class App extends Component {
 			data: [],
 			searchWizards: '',
 		};
-		
 	}
-	
+
 	componentDidMount() {
 		axios(`${url}`)
 			.then((json) => {
@@ -31,7 +30,7 @@ class App extends Component {
 
 	handleInput = (event) => {
 		this.setState({ searchWizard: event.target.value });
-	 };
+	};
 	render() {
 		let filteredWizards = this.state.data.filter((wizard) => {
 			return wizard.name.includes(this.state.searchWizard);

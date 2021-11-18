@@ -28,7 +28,7 @@ class DashBoard extends Component {
 												src={magic}
 												alt='magic wand'
 												height={20}
-												width={20}
+												width={10}
 											/>
 										</Link>
 									</Card.Text>
