@@ -58,13 +58,23 @@ class DashBoard extends Component {
 												exact
 												to={`/wizards/${data.name}`}>
 												{data.name}{' '}
+												{/* {data.image !== '' && (
+													<img
+														src={data.image}
+														alt='none available'
+														height={30}
+														width={30}
+													/>
+												)} */}
+											</Link>
+											{data.image !== '' && (
 												<img
 													src={data.image}
 													alt='none available'
 													height={30}
 													width={30}
 												/>
-											</Link>
+											)}
 										</Card.Text>
 									</Card.Body>
 								</Card>

@@ -8,7 +8,7 @@ import Wizards from './Wizards';
 import Search from './Search';
 
 const key = process.env.REACT_APP_MYAPI_KEY; /// api key in a varible for use later
-const url = 'https://hp-api.herokuapp.com/api/characters';
+const url = 'http://hp-api.herokuapp.com/api/characters';
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -23,7 +23,7 @@ class App extends Component {
 		axios(`${url}`)
 			.then((json) => {
 				this.setState({ data: json.data });
-				console.log(this.state.data[0]);
+				// console.log(this.state.data[0]);
 			})
 			.catch(console.error);
 	}
