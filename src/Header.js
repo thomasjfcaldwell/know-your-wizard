@@ -35,7 +35,7 @@ class Header extends Component {
 						fontSize='14'
 						fontFamily='HarryP, Harry P'>
 						<tspan x='0' y='0'>
-							THE WORLD OF HARRY POTTER
+							THE WORLD OF HARRY POTTERs
 						</tspan>
 					</text>
 				</svg>
