@@ -32,6 +32,7 @@ class App extends Component {
 		this.setState({ searchWizard: event.target.value });
 	};
 	render() {
+		console.log(this.state.data);
 		let filteredWizards = this.state.data.filter((wizard) => {
 			return wizard.name.includes(this.state.searchWizard);
 		});
