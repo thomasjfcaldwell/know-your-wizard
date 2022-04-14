@@ -42,7 +42,7 @@ class App extends Component {
 				<main>
 					<Route
 						exact
-						path='/'
+						// path='/'
 						render={() => {
 							return (
 								<DashBoard
