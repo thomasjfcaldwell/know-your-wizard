@@ -16,6 +16,7 @@ class App extends Component {
 			///setting State for data being brought in below
 			data: [],
 			searchWizards: '',
+			house: '',
 		};
 	}
 
@@ -23,7 +24,11 @@ class App extends Component {
 		axios(`${url}`)
 			.then((json) => {
 				this.setState({ data: json.data });
-				// console.log(this.state.data[0]);
+				console.log(
+					this.state.data.map((house) => {
+						return house.house;
+					})
+				);
 			})
 			.catch(console.error);
 	}
@@ -36,7 +41,7 @@ class App extends Component {
 			return wizard.name.includes(this.state.searchWizard);
 		});
 		return (
-			<div className='container'>
+			<div>
 				<Header />
 				<Search handleInput={this.handleInput} />
 				<main>

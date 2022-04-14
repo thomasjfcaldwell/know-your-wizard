@@ -1,0 +1,15 @@
+.nav {
+    height: 100px;
+    background-color:#E6BB4E ;
+    margin:0;
+}
+.nav-header {
+    position: relative;
+    left:35px;
+    top:30px;
+}
+.nav-subheader{
+    position: relative;
+    left: 70px;
+    top:10px;
+}

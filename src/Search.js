@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+// import Form from 'react-bootstrap/Form';
+import './Search.css';
 
 class Search extends Component {
 	constructor(props) {
@@ -11,21 +10,13 @@ class Search extends Component {
 
 	render() {
 		return (
-			<Form onChange={this.props.handleInput}>
-				<Row>
-					<Col>
-						<Form.Group>
-							<Form.Control
-								type='text'
-								placeholder='type here to find your favorite wizard'
-							/>
-						</Form.Group>
-						<Form.Text className='text-muted'>
-							Search by Wizard Name to bring up more information
-						</Form.Text>
-					</Col>
-				</Row>
-			</Form>
+			<form onChange={this.props.handleInput} className='form'>
+				<input
+					className='search-input'
+					type='text'
+					placeholder='Search for a wizard here'
+				/>
+			</form>
 		);
 	}
 }

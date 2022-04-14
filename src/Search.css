@@ -1,0 +1,24 @@
+.form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    background-color: #E6BB4E;
+}
+.search-input{
+    background-color:white;
+    border-radius: 15px;
+    width:80%;
+    border: 0;
+    font-size: 0.6rem;
+    letter-spacing:0.04rem;
+    height:25px;
+    margin: 10px auto;
+}
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #989898;
+    text-transform: uppercase;
+    padding-inline: 10px;
+}
