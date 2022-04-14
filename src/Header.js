@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import { LinkContainer } from 'react-router-bootstrap';
 import './Header.css';
-
-import Search from './Search';
 
 class Header extends Component {
 	render() {
 		return (
-			<nav className='nav'>
+			<nav className='navbar navbar-expand-lg'>
 				<svg
 					className='nav-header'
 					xmlns='http://www.w3.org/2000/svg'
@@ -20,8 +15,8 @@ class Header extends Component {
 						id='KNOW_YOUR_WIZARD'
 						data-name='KNOW YOUR WIZARD'
 						transform='translate(0 24)'
-						font-size='30'
-						font-family='HarryP, Harry P'>
+						fontSize='30'
+						fontFamily='HarryP, Harry P'>
 						<tspan x='0' y='0'>
 							KNOW YOUR WIZARD
 						</tspan>
@@ -37,8 +32,8 @@ class Header extends Component {
 						id='THE_WORLD_OF_HARRY_POTTER'
 						data-name='THE WORLD OF HARRY POTTER'
 						transform='translate(0 12)'
-						font-size='14'
-						font-family='HarryP, Harry P'>
+						fontSize='14'
+						fontFamily='HarryP, Harry P'>
 						<tspan x='0' y='0'>
 							THE WORLD OF HARRY POTTER
 						</tspan>

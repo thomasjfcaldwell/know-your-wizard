@@ -6,8 +6,8 @@ import { Route } from 'react-router-dom';
 import About from './About';
 import Wizards from './Wizards';
 import Search from './Search';
+import './App.css';
 
-const key = process.env.REACT_APP_MYAPI_KEY; /// api key in a varible for use later
 const url = 'http://hp-api.herokuapp.com/api/characters';
 class App extends Component {
 	constructor(props) {
@@ -24,11 +24,6 @@ class App extends Component {
 		axios(`${url}`)
 			.then((json) => {
 				this.setState({ data: json.data });
-				console.log(
-					this.state.data.map((house) => {
-						return house.house;
-					})
-				);
 			})
 			.catch(console.error);
 	}
